@@ -1,17 +1,19 @@
 .NavBar{
 	color: red;  
 }
+.Menu{
+	background-color: black;
+}
 #MenuWraper{
+	margin: 0 20% 0 20%;
 	display: grid;
 	grid-template-columns: auto auto auto;
-	background-color: red;
-}
-
-div{
-	border: 1px solid black 
+	background-color: white;
+	border: 1px white;
 }
 
 .MenuButtons{
+	color: white;
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -25,4 +27,26 @@ div{
 
 .MenuItemList{
 	list-style: none;
+}
+
+.PriceTags{
+	float:right;
+	background-color:grey;
+	color: white;
+	margin-right: 0.5em;
+	padding: 3px;
+}
+
+.MenuItemTagHot{
+	background-color:rgb(227, 56, 56);
+	color: white;
+	margin-left: 0.5em;
+	padding: 2px;
+}
+
+.MenuItemTagGrey{
+	background-color: rgb(172, 170, 170);
+	color:black;
+	margin-left: 0.5em;
+	padding: 2px;
 }
