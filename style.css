@@ -1,6 +1,48 @@
-.NavBar{
-	color: red;  
+body{
+	padding: 0;
+	margin: 0;
+	/**
+		Botei isso aqui pra conseguir fazer a navbar ficar certinha
+		- Arthur
+	*/
 }
+
+nav.Navbar{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+    position: sticky;
+    top:0;
+	left: 0;
+	right: 0;
+	background-color: white;
+}
+
+nav.Navbar a{
+    padding:10px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.6s;
+}
+
+nav.Navbar a:hover{
+    transform: scale(1.1);
+}
+
+nav.Navbar + img.HomeImage{
+    width: 100%;
+	max-height: 700px;
+	margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	object-fit: cover;
+}
+
+
 .Menu{
 	background-color: black;
 }
