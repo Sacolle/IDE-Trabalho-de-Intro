@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Pizza</title>
 </head>
+
 <body>
 	<nav id="home" class="Navbar">
 		<a href="#home">Home</a>
@@ -18,93 +20,139 @@
 	<img src="/assets/pizza 1.png" alt="A delicious pizza!" class="HomeImage">
 	<div class="Menu">
 		<div id="MenuWraper">
-			<div class="MenuButtons" id="PizzaMenu"  style="background-color: red" onclick="menuToggle('PizzaMenu','PizzaList')">Pizza</div>
-			<div class="MenuButtons" id="SaladsMenu" style="background-color: black" onclick="menuToggle('SaladsMenu','SaladsList')">Salads</div>
-			<div class="MenuButtons" id="StaterMenu" style="background-color: black" onclick="menuToggle('StaterMenu','StaterList')">States</div>
-			<div class="MenuItems" id="PizzaList"> 
-				<ul class="MenuItemList"> 
-					<li>    
+			<div class="MenuButtons" id="PizzaMenu" style="background-color: red"
+				onclick="menuToggle('PizzaMenu','PizzaList')">Pizza</div>
+			<div class="MenuButtons" id="SaladsMenu" style="background-color: black"
+				onclick="menuToggle('SaladsMenu','SaladsList')">Salads</div>
+			<div class="MenuButtons" id="StaterMenu" style="background-color: black"
+				onclick="menuToggle('StaterMenu','StaterList')">States</div>
+			<div class="MenuItems" id="PizzaList">
+				<ul class="MenuItemList">
+					<li>
 						<h3>Margherita<mark class="PriceTags">$12.50</mark></h3>
-						<p>Fresh tomatoes, fresh mozzarella, fresh basil</p>  
+						<p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Formaggio<mark class="PriceTags">$15.50</mark></h3>
-						<p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>  
+						<p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Chicken<mark class="PriceTags">$17.00</mark></h3>
-						<p>Fresh tomatoes, mozzarella, chicken, onions</p>  
+						<p>Fresh tomatoes, mozzarella, chicken, onions</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Pineapple'o'clock<mark class="PriceTags">$16.50</mark></h3>
-						<p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>  
+						<p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Meat Town<mark class="MenuItemTagHot">Hot!</mark><mark class="PriceTags">$20.00</mark></h3>
-						<p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>  
+						<p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Parma<mark class="MenuItemTagGrey">New</mark><mark class="PriceTags">$21.50</mark></h3>
-						<p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>  
+						<p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
 					</li>
 				</ul>
 			</div>
-			<div class="MenuItems" id="SaladsList" style="display: none"> 
-				<ul class="MenuItemList"> 
-					<li>    
-						<h3>Lasagna<mark class="MenuItemTagGrey">Popular</mark><mark class="PriceTags">$13.50</mark></h3>
-						<p>Special sauce, mozzarella, parmesan, ground beef</p>  
-					</li> 
-					<li>    
+			<div class="MenuItems" id="SaladsList" style="display: none">
+				<ul class="MenuItemList">
+					<li>
+						<h3>Lasagna<mark class="MenuItemTagGrey">Popular</mark><mark class="PriceTags">$13.50</mark>
+						</h3>
+						<p>Special sauce, mozzarella, parmesan, ground beef</p>
+					</li>
+					<li>
 						<h3>Ravioli<mark class="PriceTags">$14.50</mark></h3>
-						<p>Ravioli filled with cheese</p>  
+						<p>Ravioli filled with cheese</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Spaghetti classica<mark class="PriceTags">$11.00</mark></h3>
-						<p>Fresh tomatoes, onions, ground beef</p>  
+						<p>Fresh tomatoes, onions, ground beef</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Seafood pasta<mark class="PriceTags">$25.50</mark></h3>
-						<p>Salmon, shrimp, lobster, garlic</p>  
+						<p>Salmon, shrimp, lobster, garlic</p>
 					</li>
 				</ul>
 			</div>
-			<div class="MenuItems" id="StaterList" style="display: none"> 
-				<ul class="MenuItemList"> 
-					<li>    
-						<h3>Today's soup<mark class="MenuItemTagGrey">Seasonal</mark><mark class="PriceTags">$5.50</mark></h3>
-						<p>Ask the waiter</p>  
-					</li> 
-					<li>    
+			<div class="MenuItems" id="StaterList" style="display: none">
+				<ul class="MenuItemList">
+					<li>
+						<h3>Today's soup<mark class="MenuItemTagGrey">Seasonal</mark><mark
+								class="PriceTags">$5.50</mark></h3>
+						<p>Ask the waiter</p>
+					</li>
+					<li>
 						<h3>Bruschetta<mark class="PriceTags">$8.50</mark></h3>
-						<p>Bread with pesto, tomatoes, onion, garlic</p>  
+						<p>Bread with pesto, tomatoes, onion, garlic</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Garlic bread<mark class="PriceTags">$9.50</mark></h3>
-						<p>Grilled ciabatta, garlic butter, onions</p>  
+						<p>Grilled ciabatta, garlic butter, onions</p>
 					</li>
-					<li>    
+					<li>
 						<h3>Tomozzarella<mark class="PriceTags">$10.50</mark></h3>
-						<p>Tomatoes and mozzarela</p>  
+						<p>Tomatoes and mozzarela</p>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="About"></div>
+
+	<div class="About">
+		<h2> About </h2>
+
+		<p>
+			The pizza restaurant was found in lorem ipsun dolor lorem ipsun dolor lorem ipsun dolor lorem ipsun dolor lorem
+			ipsun dolor lorem ipsun dolor lorem ipsun dolor lorem ipsun dolor lorem ipsun dolor lorem ipsun dolor lorem
+			ipsun dolor lorem ipsun dolor lorem ipsun dolor.
+		</p><br>
+
+		<p>
+			the chef? Mr. Italiano himself.
+		</p><br>
+
+		<p>
+			We are pround of our interiors.
+		</p><br>
+
+		<img src="" title="" alt=""><br><br>
+
+
+		<table>
+			<tr>
+				<th>Opening hours</th><br>
+			</tr>
+			<tr>
+				<td>Mon & Tue - Closed</td>
+				<td>Wednesday 10.00 - 24.00</td>
+				<td>Thursday 10.00-24.00</td>
+			</tr>
+			<tr>
+				<td>Fryday 10.00 - 12.00</td>
+				<td>Saturday 10.00 -23.00</td>
+				<td>Sunday - Closed</td>
+			</tr>
+		</table><br>
+    </div>
+
 	<div class="Contacts">
 		<h2>Contact</h2>
 		<p>You can find us at the Pizza Palace at Delicious St., Downtown.</p>
 		<p>We are open from 9:00 to 23:00 and we work with take-away and delivery.</p>
-		<p>Feel free to reserve a table, ask for a delivery or to just come here to visit the place. We would love it!</p>
-		<p>For reservations, delivery or to send us a message of any kind (opinions, recommendations, etc), fill the form below or call us at (51)99999-9999.</p>
-			<form action="">
-				<input type="text" name="name" placeholder="Name">
-				<input type="number" name="num_people" placeholder="Table for?" min="0" max="30">
-				<input type="datetime-local" name="reserv_date" placeholder="Date" value="2022-07-11T20:00" min="2022-07-16T10:00" max="2024-07-16T10:00">
-				<input type="text" name="message" placeholder="Message/Special requirements">
-				<input type="submit" name="submit_mes" value="Send message">
-			</form>
-	</div>	
+		<p>Feel free to reserve a table, ask for a delivery or to just come here to visit the place. We would love it!
+		</p>
+		<p>For reservations, delivery or to send us a message of any kind (opinions, recommendations, etc), fill the
+			form below or call us at (51)99999-9999.</p>
+		<form action="">
+			<input type="text" name="name" placeholder="Name">
+			<input type="number" name="num_people" placeholder="Table for?" min="0" max="30">
+			<input type="datetime-local" name="reserv_date" placeholder="Date" value="2022-07-11T20:00"
+				min="2022-07-16T10:00" max="2024-07-16T10:00">
+			<input type="text" name="message" placeholder="Message/Special requirements">
+			<input type="submit" name="submit_mes" value="Send message">
+		</form>
+	</div>
 </body>
+
 </html>
