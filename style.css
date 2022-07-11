@@ -1,3 +1,28 @@
 .NavBar{
 	color: red;  
 }
+#MenuWraper{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: red;
+}
+
+div{
+	border: 1px solid black 
+}
+
+.MenuButtons{
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+}
+
+.MenuItems{
+	grid-column-start: 1;
+	grid-column-end: 4;  
+}
+
+.MenuItemList{
+	list-style: none;
+}

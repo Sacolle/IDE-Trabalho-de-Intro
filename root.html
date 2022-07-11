@@ -12,7 +12,49 @@
 	<div class="NavBar">
 		lo
 	</div>
-	<div class="Menu"></div>
+	<div class="Menu">
+		<div id="MenuWraper">
+			<div class="MenuButtons" id="PizzaMenu" onclick="menuToggle('PizzaMenu','PizzaList')">Pizza</div>
+			<div class="MenuButtons" id="SaladsMenu" style="background-color: blue" onclick="menuToggle('SaladsMenu','SaladsList')">Salads</div>
+			<div class="MenuButtons" id="StaterMenu" style="background-color: blue" onclick="menuToggle('StaterMenu','StaterList')">States</div>
+			<div class="MenuItems" id="PizzaList"> 
+				<ul class="MenuItemList"> 
+					<li>  
+						<h3>Margherita</h3>
+						<p>fresh tomatoes, fresh mozzarella, fresh basil</p>  
+					</li>
+					<li>   
+						<h3>Pizza</h3>
+						<p>texto</p>  
+					</li> 
+				</ul>
+			</div>
+			<div class="MenuItems" id="SaladsList" style="display: none"> 
+				<ul class="MenuItemList"> 
+					<li>
+						<h3>Salad</h3>
+						<p>texto</p>  
+					</li>
+					<li>    
+						<h3>Salad</h3>
+						<p>texto</p>  
+					</li> 
+				</ul>
+			</div>
+			<div class="MenuItems" id="StaterList" style="display: none"> 
+				<ul class="MenuItemList"> 
+					<li>
+						<h3>Entry</h3>
+						<p>texto</p>  
+					</li>
+					<li>   
+						<h3>Entry</h3>
+						<p>texto</p>  
+					</li> 
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div class="About"></div>
 	<div class="Contacts"></div>
 </body>
