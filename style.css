@@ -92,3 +92,58 @@ nav.Navbar + img.HomeImage{
 	margin-left: 0.5em;
 	padding: 2px;
 }
+
+
+.Contacts{
+	background-color: grey;
+}
+
+#ContactsTitle{
+	padding-top: 15px;
+	text-align: center;
+}
+
+.ContactsText{
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+.ContactsForm{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	padding-bottom: 20px;
+}
+
+.ContactsFormField input, .ContactsFormField textarea{
+	border-radius: 5px;
+	background-color: #C4C4C4;
+	border: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-bottom: 7px;
+	width: 100%;
+	resize: none;
+}
+
+.SubmitButton{
+	text-align: center;
+	background-color: #C4C4C4;
+	border: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-bottom: 7px;
+	width: 100%;
+	border-radius: 5px;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.SubmitButton:hover{
+	background-color: #626262;
+	color: white;
+}
