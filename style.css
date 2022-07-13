@@ -1,7 +1,10 @@
 :root{
 	--menu-red: rgb(227, 56, 56);
 	--menu-item-color: rgb(172, 170, 170);
+	--grey-border: solid rgb(128, 128, 128);
+	--detail-border-menu: solid rgb(221, 221, 221);
 }
+
 
 body{
 	padding: 0;
@@ -125,14 +128,27 @@ nav.Navbar a:hover{
 
 .Menu{
 	background-color: black;
+	padding-bottom: 5%; 
 }
+.MenuTitle{
+	color: white;
+	text-align: center;
+	padding-top: 1em; 
+	padding-bottom: 1em; 
+	margin: 0px;   
+	font-size: 3em ;  
+}
+
 #MenuWraper{
 	margin: 0 20% 0 20%;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	background-color: white;
 	border: 1px white;
+	font-size: 1.3em; 
+	border: 0.07em var(--grey-border);
 }
+
 
 .MenuButtons{
 	color: white;
@@ -151,6 +167,12 @@ nav.Navbar a:hover{
 	list-style: none;
 }
 
+.MenuItemList li{
+	border-bottom: 0.07em var(--detail-border-menu);
+	margin-right: 2%;
+}
+
+
 .PriceTags{
 	float:right;
 	background-color:grey;
@@ -160,14 +182,14 @@ nav.Navbar a:hover{
 }
 
 .MenuItemTagHot{
-	background-color:rgb(227, 56, 56);
+	background-color: var(--menu-red);
 	color: white;
 	margin-left: 0.5em;
 	padding: 2px;
 }
 
 .MenuItemTagGrey{
-	background-color: rgb(172, 170, 170);
+	background-color: var(--menu-item-color);
 	color:black;
 	margin-left: 0.5em;
 	padding: 2px;
