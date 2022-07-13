@@ -7,18 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="index.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
 	<title>Pizza</title>
 </head>
 
 <body>
-	<nav id="home" class="Navbar">
-		<a href="#home">Home</a>
-		<a href="#menu">Menu</a>
-		<a href="#about">About</a>
-		<a href="#contact">Contact</a>
+	<nav class="Navbar">
+		<a href="#home">HOME</a>
+		<a href="#menu">MENU</a>
+		<a href="#about">ABOUT</a>
+		<a href="#contact">CONTACT</a>
 	</nav>
-	<img src="./assets/pizza 1.png" alt="A delicious pizza!" class="HomeImage">
-	<div class="Menu">
+	<div id="home" class="Home">
+		<div class="HomeInfos">
+			<div>
+				<div class="Description">
+					<span>THIN</span> 
+					<span>CRUST PIZZA</span>
+				</div>
+				<a href="#menu">LET ME SEE THE MENU</a>
+			</div>
+			<span class="OpeningHours">OPEN FROM 10AM TO 12PM</span>
+		</div>
+	</div>
+	<div id="menu" class="Menu">
 		<div id="MenuWraper">
 			<div class="MenuButtons" id="PizzaMenu" style="background-color: red"
 				onclick="menuToggle('PizzaMenu','PizzaList')">Pizza</div>
@@ -99,7 +111,7 @@
 		</div>
 	</div>
 
-	<div class="About">
+	<div id="about" class="About">
 		<h2> About </h2>
 
 		<p>
@@ -136,7 +148,7 @@
 		</table><br>
     </div>
 
-	<div class="Contacts">
+	<div id="contact" class="Contacts">
 		<h2 id="ContactsTitle">Contact</h2>
 		<div class="ContactsText">
 			<p>You can find us at the Pizza Palace at Delicious St., Downtown.</p>

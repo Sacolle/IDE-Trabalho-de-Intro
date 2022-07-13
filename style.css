@@ -1,30 +1,40 @@
+:root{
+	--menu-red: rgb(227, 56, 56);
+	--menu-item-color: rgb(172, 170, 170);
+}
+
 body{
 	padding: 0;
 	margin: 0;
-	/**
-		Botei isso aqui pra conseguir fazer a navbar ficar certinha
-		- Arthur
-	*/
+	font-family: Amatic SC;
 }
 
 nav.Navbar{
-    height: 55px;
+    height: 45px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
-    position: sticky;
-    top:0;
+    position: fixed;
+    top: 0;
 	left: 0;
 	right: 0;
-	background-color: white;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 999;
+}
+
+@media (max-width: 425px){
+	nav.Navbar{
+		justify-content: space-around;
+	}
 }
 
 nav.Navbar a{
-    padding:10px;
+    padding: 15px;
+	margin: 0 5px;
     text-decoration: none;
-    color: black;
+    color: white;
     transition-duration: 0.6s;
 }
 
@@ -32,16 +42,86 @@ nav.Navbar a:hover{
     transform: scale(1.1);
 }
 
-nav.Navbar + img.HomeImage{
+.Home{
     width: 100%;
-	max-height: 700px;
-	margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	object-fit: cover;
+	background-color: aqua;
 }
 
+.Home .HomeInfos{
+	background-image: url("./assets/pizza 1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 65vh;
+	max-height: 800px;
+	margin: 0 auto;
+    display: grid;
+	grid-template-rows: 90% 10%;
+	grid-template-columns: 33% 33% 33%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	filter: grayscale(55%);
+}
+
+.Home .HomeInfos div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: white;
+	grid-row: 1;
+	grid-column: 2;
+}
+
+.Home .HomeInfos div .Description,
+.Home .HomeInfos div a{
+	margin: 5px;
+}
+
+.Home .HomeInfos div .Description span{
+	font-size: 48px;
+	margin: 15px;
+	text-shadow: 0.1em 0.1em 0.3em black;
+	font-size: 4em;
+}
+
+.Home .HomeInfos div .Description span + span{
+	white-space: nowrap;
+}
+
+.Home .HomeInfos div a{
+	height: 50px;
+	width: 200px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	transition: 0.6s;
+	font-size: 1.5em;
+}
+
+.Home .HomeInfos div a:hover{
+	transform: scale(1.1);
+}
+
+.Home .HomeInfos .OpeningHours{
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+	display: flex;
+	width: fit-content;
+	background-color: black;
+	color: white;
+	padding: 7px 10px;
+	font-size: 1.1em;
+	justify-content: flex-start;
+}
 
 .Menu{
 	background-color: black;
