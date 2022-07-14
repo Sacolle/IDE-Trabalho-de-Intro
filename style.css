@@ -12,6 +12,10 @@ body{
 	font-family: Amatic SC;
 }
 
+button{
+	font-family: Amatic SC;
+}
+
 nav.Navbar{
     height: 45px;
     width: 100%;
@@ -23,7 +27,7 @@ nav.Navbar{
     top: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.85);
 	z-index: 999;
 }
 
@@ -33,15 +37,23 @@ nav.Navbar{
 	}
 }
 
-nav.Navbar a{
+nav.Navbar button{
     padding: 15px;
 	margin: 0 5px;
     text-decoration: none;
+	background-color: transparent;
+	border: none;
     color: white;
     transition-duration: 0.6s;
 }
 
-nav.Navbar a:hover{
+nav.Navbar button a {
+    color: white;
+	text-decoration: none;
+	font-family: Amatic SC;
+	font-size: 1.4em;
+}
+nav.Navbar button:hover{
     transform: scale(1.1);
 }
 
@@ -80,7 +92,7 @@ nav.Navbar a:hover{
 }
 
 .Home .HomeInfos div .Description,
-.Home .HomeInfos div a{
+.Home .HomeInfos div button{
 	margin: 5px;
 }
 
@@ -88,28 +100,36 @@ nav.Navbar a:hover{
 	font-size: 48px;
 	margin: 15px;
 	text-shadow: 0.1em 0.1em 0.3em black;
-	font-size: 4em;
+	font-size: 4.5em;
 }
 
 .Home .HomeInfos div .Description span + span{
 	white-space: nowrap;
 }
 
-.Home .HomeInfos div a{
+.Home .HomeInfos div button{
 	height: 50px;
 	width: 200px;
-	background-color: black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	color: white;
-	font-weight: 500;
+	background-color: transparent;
+	border: none;
 	transition: 0.6s;
-	font-size: 1.5em;
 }
 
-.Home .HomeInfos div a:hover{
+.Home .HomeInfos div button a{
+	font-family: Amatic SC;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 2em;
+}
+
+.Home .HomeInfos div button:hover{
 	transform: scale(1.1);
 }
 
