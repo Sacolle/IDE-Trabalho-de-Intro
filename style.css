@@ -249,6 +249,7 @@ nav.Navbar button:hover{
 	margin-bottom: 7px;
 	width: 100%;
 	resize: none;
+	font-family: Amatic SC;
 }
 
 .SubmitButton{
