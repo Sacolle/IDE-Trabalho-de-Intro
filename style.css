@@ -176,6 +176,7 @@ nav.Navbar button:hover{
 	padding-top: 1em;
 	padding-bottom: 1em;
 	transition: 0.6s;
+	cursor: pointer;
 }
 	
 .MenuItems{
@@ -232,7 +233,6 @@ nav.Navbar button:hover{
 		opacity: 1;
 	}
 }
-
 
 .Contacts{
 	background-color: grey;
