@@ -169,15 +169,15 @@ nav.Navbar button:hover{
 	border: 0.07em var(--grey-border);
 }
 
-
 .MenuButtons{
 	color: white;
+	background-color: black;
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
-
+	transition: 0.6s;
 }
-
+	
 .MenuItems{
 	grid-column-start: 1;
 	grid-column-end: 4;  
@@ -192,13 +192,18 @@ nav.Navbar button:hover{
 	margin-right: 2%;
 }
 
-
 .PriceTags{
 	float:right;
 	background-color:grey;
 	color: white;
 	margin-right: 0.5em;
 	padding: 3px;
+	transition: 0.6s;
+	cursor: pointer;
+}
+
+.PriceTags:hover{
+	transform: scale(1.1);
 }
 
 .MenuItemTagHot{
@@ -213,6 +218,19 @@ nav.Navbar button:hover{
 	color:black;
 	margin-left: 0.5em;
 	padding: 2px;
+}
+
+@keyframes fade-in-menu-item {
+	from {
+		transform: translate3d(0,-10%,0) ;
+		visibility: hidden;
+		opacity: 0;
+	}
+	to {
+		transform: translate3d(0,0,0) ;
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 
