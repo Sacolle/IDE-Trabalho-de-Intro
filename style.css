@@ -223,6 +223,7 @@ nav.Navbar button:hover{
 #ContactsTitle{
 	padding-top: 15px;
 	text-align: center;
+	margin: 0;
 }
 
 .ContactsText{
@@ -270,3 +271,25 @@ nav.Navbar button:hover{
 	background-color: #626262;
 	color: white;
 }
+
+.About{
+	background-color: rgb(235, 84, 84) ;
+	padding: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.AboutTitle{
+	padding-top: 15px;
+	text-align: center;
+}
+
+
+
+
+
