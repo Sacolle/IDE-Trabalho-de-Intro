@@ -327,3 +327,36 @@ nav.Navbar button:hover{
 	background-color: #626262;
 	color: white;
 }
+
+.About{
+	background-color: #8b5f5b ;
+	padding: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 30%;
+	font-size: 20px;
+}
+
+.About img.map-imag{
+width: 100vw;
+}
+
+.About img.restaurant-image{
+	width: 50vw;
+	}
+
+.AboutTitle{
+	padding-top: 15px;
+	text-align: center;
+}
+
+
+
+
+
+
+
