@@ -1,11 +1,40 @@
-const red = 'var(--menu-red)';
+const RED = 'var(--menu-red)';
+
+function animationOnLoad(){
+	document.getElementById('PizzaMenu').style.backgroundColor = RED
+
+	const pizza = document.getElementById('PizzaList')
+	let i = 0;
+	for(li of pizza.firstElementChild.children){
+		li.style.visibility = 'hidden'
+		li.style.animation = `fade-in-menu-item 0.4s ease-in ${i}s forwards`
+		i += 0.1
+	}
+
+}
+window.onload = animationOnLoad
 
 function menuToggle(subMenuId,itemListId){
-	document.querySelectorAll('.MenuButtons').forEach(e=>e.style.backgroundColor = 'black')
-	document.querySelectorAll('.MenuItems').forEach(e=>e.style.display = 'none')
+	if (document.getElementById(itemListId).style.display == 'block')return 
 
-	document.getElementById(subMenuId).style.backgroundColor = red 
-	document.getElementById(itemListId).style.display = 'block'
+	document.querySelectorAll('.MenuButtons').forEach(e=>e.style.backgroundColor = 'black')
+	document.getElementById(subMenuId).style.backgroundColor = RED
+
+	const menuItems = document.querySelectorAll('.MenuItems');
+
+	for(elem of menuItems){
+		if(elem.id === itemListId){
+			elem.style.display = 'block'
+			let i = 0;
+			for(li of elem.firstElementChild.children){
+				li.style.visibility = 'hidden'
+				li.style.animation = `fade-in-menu-item 0.4s ease-in ${i}s forwards`
+				i += 0.1
+			}
+		}else{
+			elem.style.display = 'none'
+		}
+	}
 }
 
 function scrollToIdOnClick(event){
