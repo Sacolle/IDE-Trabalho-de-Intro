@@ -3,17 +3,23 @@
 	--menu-item-color: rgb(172, 170, 170);
 	--grey-border: solid rgb(128, 128, 128);
 	--detail-border-menu: solid rgb(221, 221, 221);
+	--title-font-size: 4em;
+	--menu-tags-font-size: 0.8em;
 }
-
 
 body{
 	padding: 0;
 	margin: 0;
 	font-family: Amatic SC;
+	background-color: black;
 }
 
 button{
 	font-family: Amatic SC;
+}
+
+p{
+	font-size: 1.5em;
 }
 
 nav.Navbar{
@@ -51,7 +57,7 @@ nav.Navbar button a {
     color: white;
 	text-decoration: none;
 	font-family: Amatic SC;
-	font-size: 1.4em;
+	font-size: 1.65em;
 }
 nav.Navbar button:hover{
     transform: scale(1.1);
@@ -68,7 +74,7 @@ nav.Navbar button:hover{
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	height: 65vh;
+	height: 67.5vh;
 	max-height: 800px;
 	margin: 0 auto;
     display: grid;
@@ -100,7 +106,7 @@ nav.Navbar button:hover{
 	font-size: 48px;
 	margin: 15px;
 	text-shadow: 0.1em 0.1em 0.3em black;
-	font-size: 4.5em;
+	font-size: 6em;
 }
 
 .Home .HomeInfos div .Description span + span{
@@ -108,8 +114,8 @@ nav.Navbar button:hover{
 }
 
 .Home .HomeInfos div button{
-	height: 50px;
-	width: 200px;
+	height: 55px;
+	width: 220px;
 	background-color: transparent;
 	border: none;
 	transition: 0.6s;
@@ -126,7 +132,7 @@ nav.Navbar button:hover{
 	color: white;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 2em;
+	font-size: 2.3em;
 }
 
 .Home .HomeInfos div button:hover{
@@ -141,8 +147,8 @@ nav.Navbar button:hover{
 	width: fit-content;
 	background-color: black;
 	color: white;
-	padding: 7px 10px;
-	font-size: 1.1em;
+	padding: 10px 15px;
+	font-size: 1.2em;
 	justify-content: flex-start;
 }
 
@@ -150,34 +156,38 @@ nav.Navbar button:hover{
 	background-color: black;
 	padding-bottom: 5%; 
 }
+
 .MenuTitle{
 	color: white;
 	text-align: center;
 	padding-top: 1em; 
 	padding-bottom: 1em; 
 	margin: 0px;   
-	font-size: 3em ;  
+	font-size: var(--title-font-size);
+
 }
 
 #MenuWraper{
-	margin: 0 20% 0 20%;
+	margin: 0 20%;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	background-color: white;
-	border: 1px white;
 	font-size: 1.3em; 
-	border: 0.07em var(--grey-border);
+	border: 0.05em var(--grey-border);
+	border-top: 0.02em var(--grey-border);
 }
-
 
 .MenuButtons{
 	color: white;
+	background-color: black;
 	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
-
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1.6em;
+	transition: 0.6s;
+	cursor: pointer;
 }
-
+	
 .MenuItems{
 	grid-column-start: 1;
 	grid-column-end: 4;  
@@ -192,38 +202,71 @@ nav.Navbar button:hover{
 	margin-right: 2%;
 }
 
+.MenuItemList li:last-of-type{
+	border: none;
+}
+
+.MenuItemList li p{
+	font-size: 1.35em;
+}
 
 .PriceTags{
 	float:right;
 	background-color:grey;
 	color: white;
 	margin-right: 0.5em;
-	padding: 3px;
+	padding: 7px;
+	transition: 0.6s;
+	font-size: var(--menu-tags-font-size);
+	cursor: pointer;
+	border-radius: 5%;
+	text-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.3);
+}
+
+.PriceTags:hover{
+	transform: scale(1.1);
 }
 
 .MenuItemTagHot{
+	border-radius: 5%;
 	background-color: var(--menu-red);
 	color: white;
 	margin-left: 0.5em;
-	padding: 2px;
+	font-size: var(--menu-tags-font-size);
+	padding: 5px 7.5px;
 }
 
 .MenuItemTagGrey{
+	border-radius: 5%;
 	background-color: var(--menu-item-color);
 	color:black;
 	margin-left: 0.5em;
-	padding: 2px;
+	font-size: var(--menu-tags-font-size);
+	padding: 5px 7.5px;
 }
 
+@keyframes fade-in-menu-item {
+	from {
+		transform: translate3d(0,-10%,0) ;
+		visibility: hidden;
+		opacity: 0;
+	}
+	to {
+		transform: translate3d(0,0,0) ;
+		visibility: visible;
+		opacity: 1;
+	}
+}
 
 .Contacts{
-	background-color: grey;
+	background-color: rgb(108, 122, 129);
 }
 
 #ContactsTitle{
 	padding-top: 15px;
 	text-align: center;
-	margin: 0;
+	color: white;
+	font-size: 3em; 
 }
 
 .ContactsText{
@@ -231,18 +274,26 @@ nav.Navbar button:hover{
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
+	font-weight: 500;
+	color: white;
+}
+
+.ContactTag{
+	background-color: black;
+	padding: 4.5px;
 }
 
 .ContactsForm{
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 8em;
 	width: 60%;
 	padding-bottom: 20px;
 }
 
 .ContactsFormField input, .ContactsFormField textarea{
 	border-radius: 5px;
-	background-color: #C4C4C4;
+	background-color: #E4E4E4;
 	border: none;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -251,6 +302,9 @@ nav.Navbar button:hover{
 	width: 100%;
 	resize: none;
 	font-family: Amatic SC;
+	font-size: 1.2em;
+	font-weight: 600;
+	box-sizing: border-box;
 }
 
 .SubmitButton{
@@ -265,6 +319,8 @@ nav.Navbar button:hover{
 	border-radius: 5px;
 	transition-duration: 0.3s;
 	cursor: pointer;
+	font-weight: 600;
+	font-size: 1.2em;
 }
 
 .SubmitButton:hover{
